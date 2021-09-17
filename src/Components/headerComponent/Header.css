@@ -43,7 +43,7 @@
   left: 350px;
 }
 
-.login-button {
+.order-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,12 +61,12 @@
   position: fixed;
 }
 
-.login-button:hover {
+.order-button:hover {
   cursor: pointer;
 }
 
 @media screen and (max-width: 851px) {
-  .login-button {
+  .order-button {
     display: none;
   }
 

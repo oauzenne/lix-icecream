@@ -19,7 +19,7 @@ class Navbar extends React.Component {
         <section className="navbar">
           {this.props.screenWidth > 871 &&
             linkData.map((link) =>
-              link.name !== "Login" ? (
+              link.path !== "/order" ? (
                 window.location.pathname !== link.path ? (
                   <a href={link.path} className="navbar-item">
                     {link.name}
@@ -36,9 +36,15 @@ class Navbar extends React.Component {
             this.props.screenWidth < 871 &&
             linkData.map((link) =>
               link.name !== "Home" ? (
-                <a href={link.path} className="navbar-item">
-                  {link.name}
-                </a>
+                link.path !== "/order" ? (
+                  <a href={link.path} className="navbar-item">
+                    {link.name}
+                  </a>
+                ) : (
+                  <a href={link.path} className="navbar-item-order">
+                    {link.name}
+                  </a>
+                )
               ) : (
                 <a href={link.path} className="navbar-item-top">
                   {link.name}

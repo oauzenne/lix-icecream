@@ -8,7 +8,6 @@ const navLinks = [
     name: "About",
     path: "/about",
     display: "initial",
-
   },
   {
     name: "Contact",
@@ -16,8 +15,8 @@ const navLinks = [
     display: "initial",
   },
   {
-    name: "Login",
-    path: "/login",
+    name: "Order Now!",
+    path: "/order",
     display: "menu",
   },
 ];

@@ -64,6 +64,21 @@
   margin-bottom: 20px;
 }
 
+.navbar-item-order {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 60px;
+  color: #2b2a3f;
+  text-decoration: inherit;
+  outline: none;
+  font-family: "Poppins", serif;
+  text-align: center;
+  margin-right: 0px;
+  padding-right: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 851px) {
   .navbar {
     flex-direction: column;
@@ -76,7 +91,6 @@
 
   .navbar-item {
     margin-right: 0px;
-
     margin-bottom: 20px;
     justify-content: right;
     padding-right: 10px;
