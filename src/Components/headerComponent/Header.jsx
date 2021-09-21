@@ -27,9 +27,9 @@ const Header = () => {
         <section className="header-top__navbar">
           <section className="header-top__navigation">
             <Navbar screenWidth={screenWidth} />
-            <button href="/order" className="order-button">
-              Order Now!
-            </button>
+            <a href="/order" className="order-link">
+              <button className="order-button">Order Now!</button>
+            </a>
           </section>
         </section>
       </section>

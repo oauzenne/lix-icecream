@@ -6,6 +6,7 @@
   width: 100%;
   padding: 10px;
   justify-content: space-between;
+  padding-bottom: 0px;
 }
 
 .header-top {
@@ -60,7 +61,9 @@
   right: 50px;
   position: fixed;
 }
-
+.order-link {
+  text-decoration: none;
+}
 .order-button:hover {
   cursor: pointer;
 }
