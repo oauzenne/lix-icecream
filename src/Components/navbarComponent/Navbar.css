@@ -1,13 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-.navbar {
+/* .navbar {
   display: flex;
   flex-direction: row;
+} */
+/* .navbar {
+  width: 50%;
+
+} */
+.navbar-container{
+/* display: flex;
+ */
+ width: 60%
 }
 
 .navbar-item {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  justify-content: center; 
   align-items: center;
   margin-left: 60px;
   color: #dba37d;
@@ -17,7 +26,7 @@
 }
 
 .navbar-item-active {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   margin-left: 60px;
@@ -49,7 +58,7 @@
 }
 
 .navbar-item-top {
-  display: flex;
+  /* display: flex; */
   justify-content: flex-end;
   align-items: center;
   margin-left: 60px;
@@ -65,7 +74,7 @@
 }
 
 .navbar-item-order {
-  display: flex;
+  /* display: flex; */
   justify-content: flex-end;
   align-items: center;
   margin-left: 60px;
@@ -105,4 +114,10 @@
   .btn {
     display: block;
   }
+}
+.test-1 {
+  width: 50%
+}
+.test-2 {
+  width: 50%
 }

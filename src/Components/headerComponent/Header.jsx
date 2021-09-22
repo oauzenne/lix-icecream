@@ -19,20 +19,21 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="header">
-      <section className="header-top">
-        <section className="header-top__logo">
-          <img src={Logo} href="/" alt="brand-logo" className="header-logo" />
-        </section>
-        <section className="header-top__navbar">
-          <section className="header-top__navigation">
-            <Navbar screenWidth={screenWidth} />
-            <a href="/order" className="order-link">
-              <button className="order-button">Order Now!</button>
-            </a>
-          </section>
-        </section>
-      </section>
+    <section className="header-container">
+      <div className="header-top__logo">
+        <img src={Logo} href="/" alt="brand-logo" className="header-logo" />
+      </div>
+
+      <div className="header-top__navigation">
+        <div className="test-1">
+          <Navbar screenWidth={screenWidth} />
+        </div>
+        <div className="test-2">
+          <a href="/order" className="order-link">
+          <button className="order-button">Order Now!</button>
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

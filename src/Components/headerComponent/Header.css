@@ -1,49 +1,31 @@
-.header {
-  margin-top: 20px;
+.header-container {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 100%;
-  padding: 10px;
-  justify-content: space-between;
-  padding-bottom: 0px;
 }
-
 .header-top {
   display: flex;
   width: 100%;
   height: 80px;
 }
-
 .header-top__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-  position: fixed;
+  width: 40%
 }
-
 .header-logo {
   width: 290px;
-  margin-left: 50px;
+  left: 50px;
+  display: flex;
 }
-
 .header-top__navbar {
   display: flex;
   flex: 1;
   flex-direction: column;
   margin-top: 27px;
 }
-
 .header-top__navigation {
+  width: 60%;
   display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: fixed;
-  left: 350px;
+  align-items: center;
+  justify-content: center;
 }
-
 .order-button {
   display: flex;
   justify-content: center;
@@ -59,7 +41,6 @@
   border-radius: 20px;
   margin-top: -7px;
   right: 50px;
-  position: fixed;
 }
 .order-link {
   text-decoration: none;
@@ -67,7 +48,6 @@
 .order-button:hover {
   cursor: pointer;
 }
-
 @media screen and (max-width: 851px) {
   .order-button {
     display: none;
