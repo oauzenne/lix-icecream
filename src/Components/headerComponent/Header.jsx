@@ -25,14 +25,11 @@ const Header = () => {
       </div>
 
       <div className="header-top__navigation">
-        <div className="test-1">
-          <Navbar screenWidth={screenWidth} />
-        </div>
-        <div className="test-2">
-          <a href="/order" className="order-link">
-          <button className="order-button">Order Now!</button>
-          </a>
-        </div>
+        <Navbar screenWidth={screenWidth} />
+
+        <a href="/order" className="order-link">
+          <button className="order-button">Order!</button>
+        </a>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ const navLinks = [
     display: "initial",
   },
   {
-    name: "Order Now!",
+    name: "Order!",
     path: "/order",
     display: "menu",
   },

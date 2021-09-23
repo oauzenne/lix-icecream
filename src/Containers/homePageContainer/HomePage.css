@@ -1,26 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 .splash-image {
   display: flex;
   width: 100%;
   right: 30px;
 }
+
 .home-left {
   width: 60%;
 }
+
 h1 {
   font-size: 80px;
   font-family: "Poppins", serif;
   color: #ed7d90;
 }
+
 h2 {
   color: #dba37d;
   font-weight: 500;
   font-size: 40px;
 }
+
 .squiggle-image {
   width: 200px;
   display: flex;
 }
+
 h3 {
   display: flex;
   color: #03bdaa;
@@ -28,9 +34,11 @@ h3 {
   font-size: 25px;
   text-align: left;
 }
+
 .home-container {
   display: flex;
 }
+
 .about-button {
   display: flex;
   justify-content: center;
@@ -46,9 +54,11 @@ h3 {
   border-radius: 30px;
   left: 60px;
 }
+
 .about-button:hover {
   cursor: pointer;
 }
+
 .build-button {
   display: flex;
   justify-content: center;
@@ -66,40 +76,50 @@ h3 {
   background: -moz-linear-gradient(bottom right, #ed7d91, #59c0be);
   background: linear-gradient(to top left, #ed7d91, #59c0be);
 }
+
 a {
   text-decoration: none;
 }
+
 .build-button:hover {
   cursor: pointer;
 }
+
 .facebook-image {
   width: 80px;
-
   display: flex;
 }
+
 .instagram-image {
   width: 80px;
   display: flex;
 }
+
 .pinterest-image {
   width: 80px;
   display: flex;
 }
+
 .social-links {
   display: flex;
 }
+
 .buttons {
   display: flex;
 }
+
 .buttons > * {
   margin-right: 30px;
 }
+
 .social-links > * {
   margin-right: 30px;
 }
+
 .home-right {
   width: 40%;
 }
+
 @media only screen and (max-width: 800px) {
   .home-container {
     flex-direction: column-reverse;

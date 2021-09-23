@@ -1,21 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-/* .navbar {
-  display: flex;
-  flex-direction: row;
-} */
-/* .navbar {
-  width: 50%;
-
-} */
 .navbar-container{
-/* display: flex;
- */
- width: 60%
+ width: 60%;
+ padding-right: 400px;
 }
 
 .navbar-item {
-  /* display: flex; */
   justify-content: center; 
   align-items: center;
   margin-left: 60px;
@@ -26,7 +16,6 @@
 }
 
 .navbar-item-active {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   margin-left: 60px;
@@ -43,7 +32,7 @@
   display: none;
   position: absolute;
   right: 10px;
-  top: 7px;
+  top: 43px;
   padding: 5px;
   background-color: transparent;
   border: 0px;
@@ -58,7 +47,6 @@
 }
 
 .navbar-item-top {
-  /* display: flex; */
   justify-content: flex-end;
   align-items: center;
   margin-left: 60px;
@@ -74,28 +62,30 @@
 }
 
 .navbar-item-order {
-  /* display: flex; */
+  margin-right: 0px;
+  margin-bottom: 20px;
+  justify-content: right;
+  padding-right: 10px;
+  text-align: center;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-left: 60px;
   color: #dba37d;
-  text-decoration: inherit;
-  outline: none;
-  font-family: "Poppins", serif;
-  text-align: center;
-  margin-right: 0px;
-  padding-right: 10px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
-@media screen and (max-width: 851px) {
+
+@media screen and (max-width: 871px) {
   .navbar {
     flex-direction: column;
     height: auto;
   }
+
   .navbar-container {
     background-color: #03bdaa;
     border-radius: 20px;
+    width: 30%;
+    padding-right: 20px;
   }
 
   .navbar-item {
@@ -113,11 +103,32 @@
 
   .btn {
     display: block;
+    position: fixed;
+  }
+  
+  .navbar-item-top {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    justify-content: right;
+    padding-right: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 60px;
+    color: white;
+    margin-top: 10px;
   }
 }
-.test-1 {
-  width: 50%
+
+@media screen and (max-width: 1330px) and (min-width: 871px) {
+  .navbar-container {
+    padding-right: 100px;
+  }
 }
-.test-2 {
-  width: 50%
+
+@media screen and (max-width: 998px) and (min-width: 871px) {
+  .navbar-container {
+    padding-right: 50px;
+  }
 }
