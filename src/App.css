@@ -40,3 +40,9 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 411px) {
+  .App {
+    padding: 30px;
+  }
+}

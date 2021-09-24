@@ -8,13 +8,16 @@
 
 .home-left {
   width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 100px;
   font-family: "Poppins", serif;
   color: #ed7d90;
-  margin-top: 100px;
+  margin-top: -10px;
   margin-bottom: -20px;
 }
 
@@ -129,10 +132,125 @@ a {
 
 .home-right {
   width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 @media only screen and (max-width: 800px) {
   .home-container {
     flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .home-container {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  h1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-right {
+    width: 100%;
+  }
+
+  .home-left {
+    width: 100%;
+    align-items: center;
+  }
+
+  .splash-image {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    line-height: .99;
+    margin-top: 20px;
+  }
+
+  .splash-image {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .home-right {
+    margin-top: -40px;
+  }
+
+  .squiggle-image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about-button {
+    width: 150px;
+  }
+
+  .build-button {
+    width: 150px;
+  }
+
+  .buttons > * {
+    margin-right: 10px;
+  }
+
+  .social-links {
+    margin-top: 30px;
+  }
+
+  .social-links > * {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .header-container {
+    position: sticky;
+    top: 0;
+    background-color: #ffe2cf;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .header-logo {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .header-logo {
+    width: 270px;
   }
 }
