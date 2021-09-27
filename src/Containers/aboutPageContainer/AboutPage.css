@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-mid {
+  display: flex;
+  margin-top: -50px;
+  justify-content: center;
+}
+
+.icecream-header-image {
+  width: 100%;
+  display: flex;
+}
+
+h2 {
+ font-size: 75px;
+ width: 100%;
+ text-align: center;
+ color: #7B3F00;
+ font-family: 'Cedarville Cursive', cursive;
+}
+
+.about-bottom-left {
+  display: flex;
+  width: 50%;
+}
+
+.about-bottom-right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+    color: #7B3F00;
+}
+
+.icecream-owner-image {
+  width: 45%;
+}
+
+h3 {
+    justify-content: center;
+    font-weight: bold;
+}
