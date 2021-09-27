@@ -13,7 +13,6 @@
 
 .about-mid {
   display: flex;
-  margin-top: -50px;
   justify-content: center;
 }
 
@@ -22,7 +21,7 @@
   display: flex;
 }
 
-h2 {
+.header-text {
  font-size: 75px;
  width: 100%;
  text-align: center;
@@ -39,7 +38,6 @@ h2 {
   display: flex;
   width: 50%;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -48,15 +46,28 @@ h2 {
   flex-direction: row;
 }
 
-p {
+.about-text {
     color: #7B3F00;
+    font-size: 22px;
 }
 
 .icecream-owner-image {
-  width: 45%;
+  width: 55%;
 }
 
-h3 {
+.founder-title {
     justify-content: center;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+.about-bottom {
+  flex-direction: column;
+}
+.about-bottom-left {
+  width: 100%;
+}
+.about-bottom-right {
+  width: 100%;
+}
 }

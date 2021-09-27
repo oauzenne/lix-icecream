@@ -14,11 +14,11 @@ const AboutPage = () => {
         />
       </div>
       <div className="about-mid">
-        <h2>The Lix Story</h2>
+        <h2 className="header-text">The Lix Story</h2>
       </div>
       <div className="about-bottom">
         <div className="about-bottom-left">
-          <p>
+          <p className="about-text">
             Ever since I was a little girl, I always loved going to get icecream
             with my family. It was always a time full joy and happiness. After
             growing up and realizing how "the world works", I realized that
@@ -63,7 +63,7 @@ const AboutPage = () => {
             alt="icecream-owner"
             className="icecream-owner-image"
           />
-          <h3>Sarah Owens, Founder</h3>
+          <h3 className="founder-title">Sarah Owens, Founder</h3>
         </div>
       </div>
     </section>
