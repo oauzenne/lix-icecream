@@ -12,7 +12,11 @@ const HomePage = () => {
       <div className="home-left">
         <h1> Ready for yummy?</h1>
         <h2>We have the perfect cone for you!</h2>
-        <img src={LineBreak} alt="line-squiggle" className="squiggle-image" />
+        <img
+          src={LineBreak}
+          alt="line-squiggle"
+          className="squiggle-image-home"
+        />
         <h3>
           Order your cone online and pick up your delcious treat lickety split!
           Our icecream is organic and we source our products from local farmers
