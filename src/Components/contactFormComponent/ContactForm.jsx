@@ -22,7 +22,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="contact-form-container">
       <form>
         <fieldset>
           <div className="form-row">

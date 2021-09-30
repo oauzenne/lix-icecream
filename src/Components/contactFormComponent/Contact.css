@@ -3,8 +3,13 @@
   font-family: "Helvetica";
 }
 
+.contact-form-container {
+  width: 100%
+}
+
 form {
   padding: 0;
+  width: 100%;
 }
 
 fieldset {
@@ -17,10 +22,11 @@ fieldset {
   border-bottom: 1px solid #e6eef8;
   width: 800px;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .form-textarea {
-  width: 800px;
+  width: 100%;
 }
 
 .label {
@@ -110,57 +116,3 @@ fieldset {
   text-decoration: none;
   transition: all .15s ease;
 }
-/* 
-.form-submit:active {
-  color: #e6ebf1;
-  background-color: #555abf;
-  transform: translateY(1px);
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-}
-
-@media (min-width: 670px) {
-  form {
-    padding: 10px 18px 20px 24px;
-  }
-
-  .form-row {
-    padding: 4px 0;
-    max-width: 600px;
-    display: flex;
-    flex-direction: row;
-    border-bottom: none;
-  }
-
-  .form-row label {
-    font-size: 17px;
-    font-weight: 500;
-    margin-right: 20px;
-    align-self: center;
-    flex: 30%;
-    letter-spacing: normal;
-    text-transform: none;
-  }
-
-  .form-row:last-child label {
-    align-self: flex-start;
-    padding-top: 7px;
-  }
-
-  .form-row input,
-  .form-row textarea {
-    align-self: center;
-    padding: 5px 20px 8px 13px;
-    flex: 70%;
-    width: auto;
-    border: 1px solid #e6eef8;
-  }
-
-  .form-row textarea {
-    padding: 7px 20px 7px 13px;
-    min-height: 100px;
-  }
-
-  .submit-row {
-    padding: 12px 0 0;
-  }
-} */

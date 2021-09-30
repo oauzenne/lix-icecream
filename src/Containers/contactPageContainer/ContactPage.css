@@ -1,4 +1,4 @@
-.contact-container {
+  .contact-container {
     display: flex;
     flex-direction: column;
   }
@@ -42,11 +42,12 @@
     width: 100%;
     color: #ffe2cf;
     margin-bottom: 0px;
+    justify-content: center;
   }
 
   .contact-text {
     width: 100%;
-    margin: 20px;
+    /* margin: 20px; */
     text-align: center;
     font-size: 30px;
     color: white;
@@ -54,10 +55,32 @@
   }
 
   .squiggle-image {
-    width: 170px;
+    width: 20%;
     display: flex;
     margin-top: 25px;
     margin-bottom: 10px;
-    margin-left: 335px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 768px) {
+    .contact-header {
+      font-size: 50px;
+    }
+
+    .contact-text {
+      font-size: 25px;
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .contact-header {
+      font-size: 30px;
+    }
+
+    .contact-text {
+      font-size: 10px;
+      padding: 15px;
+    }
   }
