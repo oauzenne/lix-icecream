@@ -42,6 +42,15 @@
     display: flex;
     width: 12%;
     margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .cone-type-image-active {
+    display: flex;
+    width: 12%;
+    margin-right: 20px;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 10px #ED7D90);
   }
 
   .icecream-header {
@@ -111,6 +120,29 @@
     font-family: inherit;
     color: white;
     background: #ED7D90;
+    height: 40px;
+    white-space: nowrap;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-decoration: none;
+    transition: all .15s ease;
+    float: right;
+    margin-right: 22px;
+  }
+
+  .form-submit-order-disabled {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    color: white;
+    background: #D3D3D3;
     height: 40px;
     white-space: nowrap;
     line-height: 40px;
