@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+ 
+ .order-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-left {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 30px;
+  }
+  
+  .order-right {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .order-contents {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    margin-top: 40px;
+  }
+
+  .pink-abstract-image {
+    width: 73.8%;
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .cone-type-image {
+    display: flex;
+    width: 12%;
+    margin-right: 20px;
+  }
+
+  .icecream-header {
+    color: #DBA37D;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .icecream-header-first {
+    color: #DBA37D;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .cone-header {
+    color: #DBA37D;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .cone-type-image-container {
+    display: flex;
+  }
+
+  .order-header {
+    font-family: "Poppins", serif;
+    color: #ED7D90;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .order-select {
+    color: #6F3A27;
+    border-color: #6F3A27;
+  }
+
+  .text-whipped {
+    color: #6F3A27;
+    font-weight: bold;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .form-submit-order {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: white;
+    background: #ED7D90;
+    height: 40px;
+    white-space: nowrap;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    text-decoration: none;
+    transition: all .15s ease;
+    float: right;
+    margin-right: 22px;
+  }
+
+  .total-text {
+    margin-top: 30px;
+    color: #6F3A27;
+    font-weight: bold;
+    display: flex;
+    width: 20%;
+  }
+
+  .total-submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
