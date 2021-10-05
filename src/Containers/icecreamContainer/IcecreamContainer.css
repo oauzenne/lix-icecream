@@ -31,7 +31,7 @@
     }
 
     .icecream-graphic-whip {
-      left: 150px;
+      left: 70px;
     }
   }
 
@@ -52,7 +52,7 @@
     }
 
     .icecream-container {
-        right: 220px;
+      right: 220px;
     }
   }
 
@@ -63,7 +63,7 @@
    }
 
    .icecream-graphic-whip {
-    left: 120px;
+    left: 30px;
   }
 }
 
@@ -73,8 +73,10 @@
     }
 
     .icecream-graphic-whip {
-        width: 70%;
-      }
+      width: 75%;
+      margin-left: 90px;
+      margin-bottom: 20px;
+    }
   }
 
   @media screen and (max-width: 425px) {

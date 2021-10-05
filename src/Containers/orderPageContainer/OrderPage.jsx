@@ -6,6 +6,7 @@ import vanillaConeType from "./icecreamImages/vanilla-cone-type.png";
 import Select from "react-dropdown-select";
 import IcecreamContainer from "../icecreamContainer/IcecreamContainer";
 import { chocolateGreyX } from "../icecreamContainer/images/";
+import { useHistory } from "react-router-dom";
 
 const OrderPage = () => {
   const icecreamOptions = [
@@ -44,6 +45,10 @@ const OrderPage = () => {
   const setIcecreamImage = (image) => {
     setImage(image);
   };
+
+  const history = useHistory();
+
+  const handleClick = () => history.push("/confirmation");
 
   return (
     <section className="order-container">
@@ -131,7 +136,11 @@ const OrderPage = () => {
                 </span>
               </h3>
               {flavor !== "" && whipCherry !== "" ? (
-                <input type="submit" className="form-submit-order" />
+                <input
+                  type="submit"
+                  className="form-submit-order"
+                  onClick={handleClick}
+                />
               ) : (
                 <input type="submit" className="form-submit-order-disabled" />
               )}

@@ -9,6 +9,7 @@ import Home from './Containers/homePageContainer/HomePage';
 import About from './Containers/aboutPageContainer/AboutPage';
 import Contact from './Containers/contactPageContainer/ContactPage';
 import Order from './Containers/orderPageContainer/OrderPage';
+import Confirmation from './Containers/confirmationPageContainer/ConfirmationPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/order" component={Order} />
+          <Route path="/confirmation" component={Confirmation} />
         </Switch>
       </Router >
     </div>

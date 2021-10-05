@@ -41,7 +41,6 @@ const ContactForm = () => {
             <label className="label">Your email</label>
             <input
               name="email"
-              type="email"
               placeholder="How can we electronically communicate with you? :)"
               required
               value={email}

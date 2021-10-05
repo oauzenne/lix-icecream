@@ -1,0 +1,75 @@
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-contents {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.confirmed-check {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmation-time {
+    color: #03bdaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.confirmed-header {
+    font-size: 100px;
+}
+
+.address {
+    font-size: 30px;
+    color: #ED7D90;
+}
+
+@media screen and (max-width: 768px) {
+    .confirmation-time {
+      font-size: 40px;
+    }
+}
+
+  @media screen and (max-width: 425px) {
+    .confirmation-time {
+        font-size: 22px;
+    }
+
+    .confirmed-header {
+        font-size: 70px;
+    }
+}
+
+  @media screen and (max-width: 375px) {
+    .confirmed-header {
+        font-size: 60px;
+    }
+
+    .confirmation-time {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .confirmed-header {
+        font-size: 50px;
+    }
+}
