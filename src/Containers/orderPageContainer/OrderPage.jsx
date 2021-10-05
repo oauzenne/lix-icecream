@@ -4,6 +4,7 @@ import pinkAbstract from "./pinkAbstract.png";
 import chocolateConeType from "./icecreamImages/chocolate-cone-type.png";
 import vanillaConeType from "./icecreamImages/vanilla-cone-type.png";
 import Select from "react-dropdown-select";
+import IcecreamContainer from "../icecreamContainer/IcecreamContainer";
 
 const OrderPage = () => {
   const icecreamOptions = [
@@ -11,18 +12,11 @@ const OrderPage = () => {
     { label: "Fudge", value: "fudge" },
   ];
 
-  const toppingOptions = [
-    { label: "Sprinkles", value: "sprinkles" },
-    { label: "Caramel", value: "caramel" },
-  ];
-
   const [cone, setCone] = React.useState("chocolate");
   const [flavor, setFlavor] = React.useState("");
-  const [toppings, setToppings] = React.useState("");
-  const [whipCherry, setWhipCherry] = React.useState("yes");
+  const [whipCherry, setWhipCherry] = React.useState("");
   const [total, setTotal] = React.useState(2.25);
-  const [icecreamImage, setImage] = React.useState("placeholder");
-  const [removeLastTopping, setRemoveLastTopping] = React.useState(false);
+  const [icecreamImage, setImage] = React.useState("chocolate-grey-x-default");
 
   const handleSetFlavor = (value) => {
     if (flavor === "") {
@@ -34,40 +28,20 @@ const OrderPage = () => {
   };
 
   const handleSetWhipCherry = (value) => {
-    if (whipCherry === "yes" && value === "no") {
+    if (whipCherry === "" && value === "no") {
+      setTotal(total);
+    } else if (whipCherry === "yes" && value === "no") {
       setTotal(total - 1);
     } else if (whipCherry === "no" && value === "yes") {
+      setTotal(total + 1);
+    } else if (whipCherry === "" && value === "yes") {
       setTotal(total + 1);
     }
     setWhipCherry(value);
   };
 
-  console.log(cone);
-  console.log(flavor);
-  console.log(total);
-  console.log(toppings);
-  console.log(whipCherry);
-  console.log(icecreamImage);
-
-  const handleSetToppings = (value) => {
-    if (toppings.length === 0) {
-      setTotal(total + 1);
-    } else if (toppings.length === 1) {
-      setTotal(total + 1);
-      setRemoveLastTopping(true);
-    } else if (toppings.length === 2) {
-      setTotal(total - 1);
-    }
-
-    setToppings(value);
-    console.log(removeLastTopping);
-
-    console.log(toppings.length);
-
-    if (toppings.length === 1 && removeLastTopping === true) {
-      setTotal(total - 1);
-      setRemoveLastTopping(false);
-    }
+  const setIcecreamImage = (image) => {
+    setImage(image);
   };
 
   return (
@@ -119,19 +93,6 @@ const OrderPage = () => {
                 placeholder="Mmm... delicious"
                 options={icecreamOptions}
                 onChange={(values) => handleSetFlavor(values[0].value)}
-                // onChange={(values) => setFlavor(values[0].value)}
-              />
-            </div>
-            <div className="cone-type">
-              <h3 className="icecream-header">Favorite toppings?</h3>
-              <Select
-                className="order-select"
-                multi
-                options={toppingOptions}
-                placeholder="Toppings"
-                onChange={(values) =>
-                  handleSetToppings(values.map((v) => v.value))
-                }
               />
             </div>
 
@@ -143,8 +104,6 @@ const OrderPage = () => {
                 <input
                   type="radio"
                   value="yes"
-                  // name="yes"
-                  // id="yes"
                   onClick={(e) => handleSetWhipCherry("yes")}
                   checked={whipCherry === "yes"}
                 />
@@ -155,10 +114,7 @@ const OrderPage = () => {
                 <input
                   type="radio"
                   value="no"
-                  // name="no"
-                  // id="no"
                   onClick={(e) => handleSetWhipCherry("no")}
-                  // onClick={this.handleChange}
                   checked={whipCherry === "no"}
                 />
                 <label className="text-whipped" for="hide">
@@ -173,7 +129,7 @@ const OrderPage = () => {
                   ${total}
                 </span>
               </h3>
-              {flavor !== "" ? (
+              {flavor !== "" && whipCherry !== "" ? (
                 <input type="submit" className="form-submit-order" />
               ) : (
                 <input type="submit" className="form-submit-order-disabled" />
@@ -186,6 +142,13 @@ const OrderPage = () => {
             src={pinkAbstract}
             alt="pink-abstract"
             className="pink-abstract-image"
+          />
+          <IcecreamContainer
+            cone={cone}
+            flavor={flavor}
+            whipCherry={whipCherry}
+            icecreamImage={icecreamImage}
+            setIcecreamImage={setIcecreamImage}
           />
         </div>
       </div>
