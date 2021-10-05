@@ -1,5 +1,19 @@
 import React from "react";
 import "./IcecreamContainer.css";
+import {
+  chocolateBlancoWhipCherry,
+  chocolateBlancoX,
+  chocolateFudgeCherryWhip,
+  chocolateFudgeX,
+  chocolateGreyX,
+  vanillaBlancowhipCherry,
+  vanillaBlancoX,
+  vanillaFudgeCherryWhip,
+  vanillaFudgeX,
+  vanillaGreyX,
+  vanillaWhipCherry,
+  chocolateWhipCherry,
+} from "./images";
 
 class IcecreamContainer extends React.Component {
   componentDidUpdate() {
@@ -8,98 +22,132 @@ class IcecreamContainer extends React.Component {
       this.props.flavor === "" &&
       this.props.whipCherry === ""
     ) {
-      this.props.setIcecreamImage("chocolate-grey-x");
-    } else if (this.props.cone === "vanilla" && this.props.flavor === "") {
-      this.props.setIcecreamImage("vanilla-grey-x");
+      this.props.setIcecreamImage(chocolateGreyX);
+    } else if (
+      this.props.cone === "vanilla" &&
+      this.props.flavor === "" &&
+      this.props.whipCherry === ""
+    ) {
+      this.props.setIcecreamImage(vanillaGreyX);
     } else if (
       this.props.cone === "chocolate" &&
       this.props.flavor === "blanco" &&
       this.props.whipCherry === ""
     ) {
-      this.props.setIcecreamImage("chocolate-blanco-x");
+      this.props.setIcecreamImage(chocolateBlancoX);
     } else if (
       this.props.cone === "vanilla" &&
       this.props.flavor === "blanco" &&
       this.props.whipCherry === ""
     ) {
-      this.props.setIcecreamImage("vanilla-blanco-x");
+      this.props.setIcecreamImage(vanillaBlancoX);
     } else if (
       this.props.cone === "chocolate" &&
       this.props.flavor === "fudge" &&
       this.props.whipCherry === ""
     ) {
-      this.props.setIcecreamImage("chocolate-fudge-x");
+      this.props.setIcecreamImage(chocolateFudgeX);
     } else if (
       this.props.cone === "vanilla" &&
       this.props.flavor === "fudge" &&
       this.props.whipCherry === ""
     ) {
-      this.props.setIcecreamImage("vanilla-fudge-x");
-    } else if (
-      this.props.cone === "chocolate" &&
-      this.props.flavor === "blanco" &&
-      this.props.whipCherry === "yes"
-    ) {
-      this.props.setIcecreamImage("chocolate-blanco-whipCherry");
-    } else if (
-      this.props.cone === "chocolate" &&
-      this.props.flavor === "blanco" &&
-      this.props.whipCherry === "no"
-    ) {
-      this.props.setIcecreamImage("chocolate-blanco-x");
+      this.props.setIcecreamImage(vanillaFudgeX);
     } else if (
       this.props.cone === "chocolate" &&
       this.props.flavor === "fudge" &&
       this.props.whipCherry === "yes"
     ) {
-      this.props.setIcecreamImage("chocolate-fudge-whipCherry");
+      this.props.setIcecreamImage(chocolateFudgeCherryWhip);
     } else if (
       this.props.cone === "chocolate" &&
       this.props.flavor === "fudge" &&
       this.props.whipCherry === "no"
     ) {
-      this.props.setIcecreamImage("chocolate-fudge-x");
+      this.props.setIcecreamImage(chocolateFudgeX);
     } else if (
       this.props.cone === "chocolate" &&
       this.props.flavor === "blanco" &&
       this.props.whipCherry === "yes"
     ) {
-      this.props.setIcecreamImage("chocolate-blanco-whipCherry");
+      this.props.setIcecreamImage(chocolateBlancoWhipCherry);
     } else if (
       this.props.cone === "chocolate" &&
       this.props.flavor === "blanco" &&
       this.props.whipCherry === "no"
     ) {
-      this.props.setIcecreamImage("chocolate-blanco-x");
+      this.props.setIcecreamImage(chocolateBlancoX);
     } else if (
       this.props.cone === "vanilla" &&
       this.props.flavor === "fudge" &&
       this.props.whipCherry === "yes"
     ) {
-      this.props.setIcecreamImage("vanilla-fudge-whipCherry");
+      this.props.setIcecreamImage(vanillaFudgeCherryWhip);
     } else if (
       this.props.cone === "vanilla" &&
       this.props.flavor === "fudge" &&
       this.props.whipCherry === "no"
     ) {
-      this.props.setIcecreamImage("vanilla-fudge-x");
+      this.props.setIcecreamImage(vanillaFudgeX);
     } else if (
       this.props.cone === "vanilla" &&
       this.props.flavor === "blanco" &&
       this.props.whipCherry === "yes"
     ) {
-      this.props.setIcecreamImage("vanilla-blanco-whipCherry");
+      this.props.setIcecreamImage(vanillaBlancowhipCherry);
     } else if (
       this.props.cone === "vanilla" &&
       this.props.flavor === "blanco" &&
       this.props.whipCherry === "no"
     ) {
-      this.props.setIcecreamImage("vanilla-blanco-x");
+      this.props.setIcecreamImage(vanillaBlancoX);
+    } else if (
+      this.props.cone === "vanilla" &&
+      this.props.flavor === "" &&
+      this.props.whipCherry === "no"
+    ) {
+      this.props.setIcecreamImage(vanillaGreyX);
+    } else if (
+      this.props.cone === "vanilla" &&
+      this.props.flavor === "" &&
+      this.props.whipCherry === "yes"
+    ) {
+      this.props.setIcecreamImage(vanillaWhipCherry);
+    } else if (
+      this.props.cone === "chocolate" &&
+      this.props.flavor === "" &&
+      this.props.whipCherry === "no"
+    ) {
+      this.props.setIcecreamImage(chocolateGreyX);
+    } else if (
+      this.props.cone === "vanilla" &&
+      this.props.flavor === "" &&
+      this.props.whipCherry === "yes"
+    ) {
+      this.props.setIcecreamImage(chocolateWhipCherry);
+    } else if (
+      this.props.cone === "chocolate" &&
+      this.props.flavor === "" &&
+      this.props.whipCherry === "yes"
+    ) {
+      this.props.setIcecreamImage(chocolateWhipCherry);
     }
   }
-
   render() {
-    return <div className="icecream-container">{this.props.icecreamImage}</div>;
+    console.log(this.props.icecreamImage);
+    return (
+      <div className="icecream-container">
+        <img
+          src={this.props.icecreamImage}
+          alt="icecream-image"
+          className={
+            this.props.whipCherry === "yes"
+              ? "icecream-graphic-whip"
+              : "icecream-graphic"
+          }
+        />
+      </div>
+    );
   }
 }
 

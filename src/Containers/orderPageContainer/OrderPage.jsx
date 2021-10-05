@@ -5,10 +5,11 @@ import chocolateConeType from "./icecreamImages/chocolate-cone-type.png";
 import vanillaConeType from "./icecreamImages/vanilla-cone-type.png";
 import Select from "react-dropdown-select";
 import IcecreamContainer from "../icecreamContainer/IcecreamContainer";
+import { chocolateGreyX } from "../icecreamContainer/images/";
 
 const OrderPage = () => {
   const icecreamOptions = [
-    { label: "Blanco Cream", value: "blanco" },
+    { label: "Butter Creama", value: "blanco" },
     { label: "Fudge", value: "fudge" },
   ];
 
@@ -16,7 +17,7 @@ const OrderPage = () => {
   const [flavor, setFlavor] = React.useState("");
   const [whipCherry, setWhipCherry] = React.useState("");
   const [total, setTotal] = React.useState(2.25);
-  const [icecreamImage, setImage] = React.useState("chocolate-grey-x-default");
+  const [icecreamImage, setImage] = React.useState(chocolateGreyX);
 
   const handleSetFlavor = (value) => {
     if (flavor === "") {

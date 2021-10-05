@@ -1,3 +1,20 @@
 .icecream-container {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    right: 300px;
+}
+
+.icecream-graphic {
+    display: flex;
+    width: 75%;
+    position: absolute;
+}
+
+.icecream-graphic-whip {
+    display: flex;
+    width: 90%;
+    position: absolute;
 }
