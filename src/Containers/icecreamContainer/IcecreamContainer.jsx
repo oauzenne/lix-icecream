@@ -134,7 +134,6 @@ class IcecreamContainer extends React.Component {
     }
   }
   render() {
-    console.log(this.props.icecreamImage);
     return (
       <div className="icecream-container">
         <img

@@ -182,3 +182,87 @@
   .icecream-image {
     position: absolute;
   }
+
+  @media screen and (max-width: 1814px) {
+    .total-text {
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+
+    .form-submit-order-disabled {
+      margin-right: 0px
+    }
+
+    .form-submit-order {
+      margin-right: 0px
+    }
+
+    .total-text {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .cone-header {
+      font-size: 25px;
+    }
+
+    .icecream-header-first {
+      font-size: 25px;
+    }
+
+    .icecream-header {
+      font-size: 25px;
+    }
+
+    .cone-type-image-active {
+      width: 20%;
+    }
+
+    .cone-type-image {
+      width: 20%;
+    }
+
+    .total-text {
+      margin-right: 50px;
+    }
+
+    .order-left {
+      border-radius: 20px;
+    }
+
+    .order-contents {
+      flex-direction: column;
+    }
+
+    .order-left {
+      width: 100%;
+    }
+
+    .order-right {
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+
+    .cone-header {
+      width: 100%;
+    }
+
+    .icecream-header-first {
+      width: 100%;
+    }
+
+    .icecream-header {
+      width: 100%;
+    }
+
+    .cone-type-image-container {
+      align-items: center;
+    justify-content: center;
+    }
+  }
